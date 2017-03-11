@@ -10,7 +10,7 @@ class Intersection
      * @return Node        the intersecting node
      *                     null if not intersecting
      */
-    public static function check(Node $headA, Node $headB)
+    public static function check($headA, $headB)
     {
         if ($headA == null || $headB == null)
             return null;
@@ -76,7 +76,7 @@ class Intersection
 // $a5->setNext($c1);
 // $b3->setNext($c1);
 
-// $n = Intersection::check($a1, $b1);
+// $n = Intersection::check(null, null);
 // if ($n == null)
 //     echo "null";
 // else
