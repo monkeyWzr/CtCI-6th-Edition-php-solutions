@@ -1,0 +1,6 @@
+{
+    "require": {
+        "phpunit/phpunit": "5.5.*",
+        "php-ds/php-ds": "^1.1"
+    }
+}
