@@ -2,13 +2,19 @@
 
 class CheckBalanced
 {
+    /**
+     * check if a tree is balanced
+     * @param  BinaryTreeNode  $root    the root nodw
+     * @param  integer         &$heigth current height
+     * @return boolean                  true if balanced
+     */
     public static function check($root, &$heigth = 0)
     {
         $height = 0;
         return self::isBalanced($root, $height);
     }
 
-    public static function isBalanced($root, &$height)
+    private static function isBalanced($root, &$height)
     {
         if ($root == null)
             return true;
